@@ -67,4 +67,5 @@ jobs:
 
       # Step 5: Print confirmation message after image is pushed
       - name: Image digest
-        run: echo "Image pushed: ${{ secrets.DOCKER_USERNAME }}/flasktest-app:latest"
+        run: echo 'Image pushed: ${{ secrets.DOCKER_USERNAME }}/flasktest-app:latest'
+        ###inside run use '' not this ""
